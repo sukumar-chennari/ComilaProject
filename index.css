@@ -142,6 +142,7 @@
    }
    #footer>div{
     margin: 0;
+    height: 100%;
    }
    .footerH1{
     font-size: smaller;
