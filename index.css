@@ -135,7 +135,7 @@
    /* Footer */
 
    #footer{
-    height: 200px;
+    height: 50%;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -150,6 +150,7 @@
    .footFeature1{
     height: 300px;
     margin-right: 4;
+    
    }
 
    .footerOpacity>p{
