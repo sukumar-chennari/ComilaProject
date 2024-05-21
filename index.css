@@ -38,16 +38,16 @@
         justify-content: flex-start;
         height: 700px;
     }
-    .leftImgDiv{
-        width: 200px;
-        height: 300px;
-        position: relative;
-        background-color: aqua;
-    };
-    .leftImgDiv>img{
-        position: absolute;
-        width:100px;
-        height: 100%
+    
+    #secondRow{
+        background-color: aquamarine;
+        padding-left: 5px ;
+        
+    }
+    .leftImgDiv img{
+        margin: 0;
+        width: 90%;
+        height: 100%;
     }
     .rightCompanyDiv{
         width: 90%;
