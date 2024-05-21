@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Comila Template</title>
+    <style>
+        
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, "Times New Roman", Times, serif,'Rajdhani'
+        }
+        /*First row*/
+        #firstRow{
+            background-image: url(./images/slide-1.jpg);
+            background-repeat: no-repeat;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .firstRowH2{
+            color: white;
+            font-size: 40px;
+            letter-spacing: 10px;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .firstRowH3{
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            font-size: small;
+            text-align: center;
+        }
+        .firstRowH3>span{
+            color: yellow;
+        }
+        .firstrowButtonDiv{
+            margin-top: 30px;
+
+        }
+        .firstRowButton1{
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 20px;
+            width: 180px;
+            transition: background-color 2s;
+        }
+        .firstRowButton1:hover{
+            background-color: #f1c11a;
+            
+            font-weight: bold;
+        }
+        .firstRowButton2{
+            background-color: white;
+            border: 2px solid white;
+            font-weight: bold;
+            padding: 20px;
+            width: 180px;
+            transition: background-color 1s;
+        }
+        .firstRowButton2:hover{
+            background-color: #f1c11a;
+            color: white;
+        }
+
+
+        /*Second Row*/
+        #secondRow{
+            width: 100vw;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            height: 400px;
+            position: relative;
+        }
+
+        .leftImgDiv{
+            width: 30%;
+        }
+
+        .leftImgDiv>img{
+            position: absolute;
+            margin-left: 60px;
+            height:300px;
+        }
+
+        .rightCompanyDiv{
+            
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 300px;
+        }
+
+        .rightCompanyDiv>div{
+            text-align: left;
+            line-height: 25px;
+        }
+        .rightCompanyDiv p{
+            opacity: 0.6;
+        }
+        .rightCompanyText{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+    
+        /*third features row*/
+        #thirdRow{
+            background-color:#f1c11a;
+            width: 100vw;
+            height: 540px;
+            /*position: relative;*/
+        }
+        .featureSvg{
+            height: 60px;
+            width: 50px;
+            margin-right: 10px;
+        }
+        .featuresOuterDiv{
+            /*margin-top: 100px;
+            /*margin-right: 60px;
+            margin-left: 60px;*/
+            /*top: 20%;*/
+            /*position: absolute;*/
+            padding-top: 100px;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*background-color: bisque;*/
+        }
+        .feature1Div{
+            display: flex;
+            /*height: 100%;*/
+            width: 30%;
+            /*background-color: aqua;*/
+        }
+        .responsive{
+            width: 400px;
+        }
+        .feature2Div{
+            display: flex;
+            width: 30%;
+            /*height: 100%;*/
+            /*background-color:blueviolet;*/
+        }
+        .bootstrap{
+            width: 400px;
+        }
+        .feature3Div{
+            display: flex;
+            width: 30%;
+            /*height: 100%;*/
+            /*background-color: aqua;*/
+        }
+        .support{
+            width: 400px;
+        }
+        .featureButton{
+            background-color: transparent;
+            margin: 50px;
+            margin-left: 40%;
+            padding: 20px;
+            width: 180px;
+            border: 2px solid white;
+            color: white;
+            font-weight: bold;
+            transition: background-color 1s, color 1s;
+        }
+        .featureButton:hover{
+            background-color: white;
+            color: black;
+        }
+        .featuresH2{
+            color: white;
+        }
+        .featuresP{
+            line-height: 30px;
+            width: 100%;
+            opacity: 0.4;
+        }
+
+
+
+        /*Fourth Conatact details row*/
+        #fourthRow{
+            /*background-color: aqua;*/
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .fourthRowH1{
+            word-spacing: 10px;
+            letter-spacing: 10px;
+        }
+        .fourthRowP{
+            width: 60%;
+            text-align: center;
+            line-height: 20px;
+            opacity: 0.5;
+            margin-bottom: 40px;
+        }
+        form{
+            width: 50%;
+        }
+        form input{
+            width: 48%;
+            height: 40px;
+            margin: 20px 0;
+            border: 1px solid gainsboro;
+        }
+        form input:hover{
+            border: 1px solid black;
+
+        }
+        form textarea{
+            width: 97.5%;
+            border: 1px solid gainsboro;
+        }
+        .form textarea:hover{
+            outline: black;
+        }
+        .fourthRowButton{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            height: 70px;
+            width: 250px;
+            margin-top: 20px;
+            letter-spacing: 5px;
+            transition:background-color 1s, color 1s,  border 1s;
+        }
+        .fourthRowButton:hover{
+            background-color: #f1c11a;
+            color: black;
+            border: none;
+        }
+
+        /*footer*/
+        #footer{
+            background-color: black;
+            color: white;
+            height: 400px;
+            display: flex;
+        }
+        #footer>div{
+            width: 30%;
+            padding: 20px;
+            margin-left: 40px;
+        }
+        .footerH1{
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+        span>svg{
+            height: 40px;
+            width: 30px;
+        }
+        span>svg:hover
+        .footerFeature1,.footerFeature2{
+            padding: 50px 0px;
+        }
+        .footerOpacity{
+            line-height: 40px;
+            opacity: 0.5;
+        }
+        .iconFooter{
+            margin-left: 10px;
+            margin-top: 20px; 
+            word-spacing: 20px;
+            opacity: 0.5;
+
+        }
+        .iconFooter:hover{
+            color: white !important;
+            scale: 1.4;
+            opacity: 1 !important;
+            border-radius: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- <div section="main"> -->
+        <div id="firstRow">
+            <div>
+                    <h2 class="firstRowH2">Hello, We are Comila</h2>
+                    <h3 class="firstRowH3">We are almost <span> ready to</span> launch our  <span>New  Creative</span> website!</h3>
+            </div>
+            <div class="firstrowButtonDiv">
+                    <button class="firstRowButton1">Let's Begin</button>
+                    <button class="firstRowButton2">Notify me !</button>
+            </div>
+        </div>
+
+        <!-- Second row -->
+        <div id="secondRow">
+            <div class="leftImgDiv">
+                <img src="./images/about-img.png" alt="" >
+            </div>
+
+            <div class="rightCompanyDiv">
+                <div>
+                    <h2 class="rightCompanyText">our company</h2>
+                    <p class="rightCompanyText">comila studio based in hong kong</p>
+                </div>
+                <div>
+                    <p>Vivamus elit risus, porttitor id placerat ut, aliquet non quam. Pellentesque nulla metus, ornare et porttitor vel, consectetur vitae erat. Vestibulum tristique semper tellus vitae condimentum. Duis sed eros eget diam dictum posuere.</p>
+                </div>
+                <div>
+                    <p>Aliquam vel gravida ligula. Phasellus ut purus ac libero ultrices commodo commodo at quam. In vestibulum purus sit amet tempus euismod. Donec sed congue nisl.</p>
+                </div> 
+            </div>
+        </div>
+
+        <div id="thirdRow">
+            <div class="featuresOuterDiv">
+                <div class="feature1Div">
+                    <div>
+                        <svg class="featureSvg" width="135px" height="135px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 16V7.2C21 6.0799 21 5.51984 20.782 5.09202C20.5903 4.71569 20.2843 4.40973 19.908 4.21799C19.4802 4 18.9201 4 17.8 4H6.2C5.07989 4 4.51984 4 4.09202 4.21799C3.71569 4.40973 3.40973 4.71569 3.21799 5.09202C3 5.51984 3 6.0799 3 7.2V16M4.66667 20H19.3333C19.9533 20 20.2633 20 20.5176 19.9319C21.2078 19.7469 21.7469 19.2078 21.9319 18.5176C22 18.2633 22 17.9533 22 17.3333C22 17.0233 22 16.8683 21.9659 16.7412C21.8735 16.3961 21.6039 16.1265 21.2588 16.0341C21.1317 16 20.9767 16 20.6667 16H3.33333C3.02334 16 2.86835 16 2.74118 16.0341C2.39609 16.1265 2.12654 16.3961 2.03407 16.7412C2 16.8683 2 17.0233 2 17.3333C2 17.9533 2 18.2633 2.06815 18.5176C2.25308 19.2078 2.79218 19.7469 3.48236 19.9319C3.73669 20 4.04669 20 4.66667 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </div>
+                    <div class="responsive">
+                        <div><h2 class="featuresH2">RESPONSIVE</h2></div>
+                        <div><p class="featuresP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate distinctio perspiciatis</p></div>
+                    </div>
+                </div>
+    
+                <div class="feature2Div">
+                    <div>
+                        <svg class="featureSvg" width="109px" height="109px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M15 49A24 24 0 0 1 32 8"></path><path d="M49 15a24 24 0 0 1-17 41"></path><polyline points="15.03 40 15.03 48.97 8 48.97"></polyline><polyline points="48.97 24 48.97 15.03 56 15.03"></polyline></g></svg>
+                    </div>
+                    <div class="bootstrap">
+                        <div><h2 class="featuresH2">BOOTSTRAP</h2></div>
+                        <div><p class="featuresP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate distinctio perspiciatis </p></div>
+                    </div>
+                </div>
+    
+                <div class="feature3Div">
+                    <div>
+                        <svg class="featureSvg" width="104px" height="104px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 12H8.009M11.991 12H12M15.991 12H16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z" stroke="#ffffff" stroke-width="1.5"></path> </g></svg>
+                    </div>
+                    <div class="support">
+                        <div><h2 class="featuresH2">SUPPORT</h2></div> 
+                        <div><p class="featuresP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sequi iste doloremque exercitationem.</p></div>
+                    </div>
+                </div>
+            </div>
+            <button class="featureButton">Talk to Us</button>
+           
+        </div>
+        
+        <!-- Get in Touch -->
+        <div id="fourthRow">
+            <div><h1 class="fourthRowH1">GET IN TOUCH</h1></div>
+            <p class="fourthRowP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam velit aut praesentium necessitatibus in non quas, doloribus repudiandae ipsa repellat vero! Laboriosam expedita eaque 
+
+            </p>
+                <form action="">
+                    <div>
+                        <input type="text" name="" id="" placeholder="YOUR NAME"> 
+                        <input type="text" name="" id="" placeholder="YOUR EMAIL">
+                    </div>
+                    <div>
+                        <textarea name="" id="" rows="10"></textarea>
+                    </div>
+                </form>
+                <button class="fourthRowButton">SEND MESSAGE</button>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="footFeature1">
+                <div><h1 class="footerH1">comila</h1></div>
+                <div class="footerOpacity"><p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum fugiat consequuntur facilis ex?</p></div>
+                <div class="footerOpacity"><p>Copyright &copy; your company</p></div>
+                <div class="footerOpacity"><p>Designed by <span style="color:white !important"> Templatemo</span></p></div>
+            </div>
+
+            <div class="footerFeature2">
+                <div><h1 class="footerH1">our studio</h1></div>
+                <div class="footerOpacity">
+                    <p > 
+                        120-240 aliquam augue libero, <br>
+                        Convallis in vulputate 10220 <br>
+                        San Francisco, CA, USA <br>
+                    </p>
+                </div>
+
+                <div class="iconDiv" >
+                    <span><svg class="iconFooter" fill="#ffffff" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path></g></svg></span>
+                    <span><svg  class="iconFooter" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 512 512" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd12f847"> <path style="display: inline;" d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565 c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47 c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886 c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318 c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7 c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832 c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002 c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z"> </path> </g> </g></svg></span>
+                    <span><svg class="iconFooter" fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 556.669 556.668" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M545.783,241.471l-45.267-60.229l-13.474-74.125c-4.179-23.001-22.54-40.669-45.697-43.954L366.75,52.583L304.814,9.699 C289.254-1.077,269.614-2.98,252.27,4.601c-3.834,1.678-7.478,3.803-10.843,6.333l-60.225,45.262l-74.127,13.474 c-4.138,0.75-8.177,1.988-12.016,3.664c-17.08,7.464-29.316,23.573-31.936,42.031l-10.579,74.588L9.654,251.9 c-13.311,19.221-12.816,44.697,1.23,63.391l45.267,60.217l13.468,74.124c4.184,23.012,22.54,40.669,45.699,43.963l74.596,10.584 l61.93,42.885c15.33,10.615,35.463,12.572,52.545,5.096c3.843-1.678,7.498-3.812,10.849-6.328l60.231-45.267l74.13-13.474 c4.133-0.746,8.172-1.979,12.014-3.65c17.082-7.467,29.313-23.571,31.934-42.036l10.578-74.596l42.891-61.941 C560.329,285.635,559.826,260.157,545.783,241.471z M278.331,476.403c-109.22,0-198.071-88.856-198.071-198.073 c0-109.22,88.852-198.074,198.071-198.074S476.402,169.11,476.402,278.33C476.402,387.546,387.551,476.403,278.331,476.403z"></path> <path d="M239.539,258.523c4.099-2.504,6.151-6.952,6.151-13.342c0-7.068-2.71-11.749-8.15-14.001 c-4.673-1.564-10.659-2.376-17.911-2.376h-28.246v33.479H223.5C230.084,262.282,235.43,261.032,239.539,258.523z"></path> <path d="M239.13,289.98c-3.594-1.657-8.673-2.506-15.18-2.563h-32.573v40.441h32.073c6.586,0,11.687-0.859,15.366-2.662 c6.638-3.313,9.965-9.615,9.965-18.951C248.782,298.358,245.562,292.911,239.13,289.98z"></path> <path d="M278.331,98.936c-98.915,0-179.396,80.476-179.396,179.394c0,98.912,80.476,179.391,179.396,179.391 c98.92,0,179.394-80.479,179.394-179.391C457.725,179.412,377.246,98.936,278.331,98.936z M315.533,208.75h61.117v15.18h-61.117 V208.75z M274.015,332.626c-2.874,4.729-6.447,8.715-10.732,11.92c-4.836,3.708-10.558,6.256-17.126,7.628 c-6.597,1.356-13.74,2.04-21.432,2.04h-68.354V202.446h73.294c18.48,0.305,31.576,5.652,39.312,16.171 c4.64,6.441,6.941,14.178,6.941,23.167c0,9.284-2.328,16.702-7.009,22.354c-2.604,3.161-6.459,6.027-11.555,8.627 c7.721,2.827,13.58,7.277,17.5,13.414c3.943,6.1,5.911,13.525,5.911,22.225C280.76,317.414,278.538,325.492,274.015,332.626z M400.258,303.137h-79.153c0.44,10.937,4.216,18.569,11.366,22.95c4.309,2.733,9.543,4.069,15.664,4.069 c6.457,0,11.718-1.626,15.783-4.991c2.205-1.771,4.152-4.288,5.835-7.441h29.019c-0.762,6.441-4.257,12.986-10.521,19.646 c-9.735,10.574-23.375,15.876-40.893,15.876c-14.473,0-27.227-4.489-38.297-13.391c-11.04-8.942-16.58-23.436-16.58-43.537 c0-18.874,4.981-33.298,14.965-43.346c10.024-10.063,22.949-15.076,38.888-15.076c9.45,0,17.963,1.688,25.564,5.085 c7.575,3.399,13.83,8.746,18.771,16.099c4.458,6.475,7.337,13.963,8.668,22.486C400.061,286.51,400.393,293.718,400.258,303.137z"></path> <path d="M346.322,261.316c-7.307,0-12.945,2.107-16.953,6.232c-4.039,4.124-6.545,9.734-7.581,16.829h48.975 c-0.528-7.55-3.06-13.272-7.596-17.168C358.667,263.284,353.033,261.316,346.322,261.316z"></path> </g> </g> </g></svg></span>
+                    <span><svg class="iconFooter" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fffafa"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.33946 16.9997C6.10089 21.7826 12.2168 23.4214 16.9997 20.66C18.9493 19.5344 20.3765 17.8514 21.1962 15.9286C22.3875 13.1341 22.2958 9.83304 20.66 6.99972C19.0242 4.1664 16.2112 2.43642 13.1955 2.07088C11.1204 1.81935 8.94932 2.21386 6.99972 3.33946C2.21679 6.10089 0.578039 12.2168 3.33946 16.9997Z" stroke="#ffffff" stroke-width="1.5"></path> <path d="M16.9498 20.5732C16.9498 20.5732 16.0108 13.982 14.0005 10.5C11.9901 7.01798 7.05029 3.42676 7.05029 3.42676" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M21.8638 12.5803C16.4528 11.3933 9.05903 16.348 7.57739 20.8177" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M16.4141 3.20884C14.9262 7.6299 7.67443 12.5122 2.28877 11.4515" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg></span>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    
+</body>
+</html>
