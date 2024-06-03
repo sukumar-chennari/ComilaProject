@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Comila Template</title>
+    <link rel="icon" href="./images/favicon-32x32.png">
     <style>
         
         body{
@@ -16,15 +17,12 @@
             font-family: Georgia, "Times New Roman", Times, serif,'Rajdhani';
             box-sizing: border-box;
         }
-        #main{
-            height: 100%;
-        }
+        
         /*First row*/
         #firstRow{
             background-image: url(./images/slide-1.jpg);
             background-repeat: no-repeat;
             height: 600px;
-            width: 100vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -52,7 +50,6 @@
         }
         .firstrowButtonDiv{
             margin-top: 30px;
-
         }
         .firstRowButton1{
             background-color: transparent;
@@ -60,7 +57,7 @@
             color: white;
             padding: 20px;
             width: 180px;
-            transition: background-color 2s;
+            transition: background-color 2s,font-weight s;
         }
         .firstRowButton1:hover{
             background-color: #f1c11a;    
@@ -87,8 +84,7 @@
             padding-right: 0;
             display: flex;
             justify-content: space-around;
-            height: 400px;
-            position: relative;
+            height: 500px;
         }
 
         .leftImgDiv>img{
@@ -100,14 +96,16 @@
             display: flex;
             flex-direction: column;
             width: 40%;
-            height: 300px;
+            height: 400px;
         }
 
         .rightCompanyDiv>div{
             text-align: left;
             line-height: 25px;
+            height: 100%;
         }
         .rightCompanyDiv p{
+
             opacity: 0.6;
         }
         .rightCompanyText{
@@ -119,7 +117,6 @@
         /*third features row*/
         #thirdRow{
             background-color:#f1c11a;
-            
             height: 540px;
             /*position: relative;*/
         }
@@ -136,7 +133,6 @@
             /*position: absolute;*/
             padding-top: 100px;
             height: 200px;
-            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -189,8 +185,8 @@
         }
         .featuresP{
             line-height: 30px;
-            width: 100%;
             opacity: 0.4;
+            
         }
 
 
@@ -328,8 +324,8 @@
                     <p>Aliquam vel gravida ligula. Phasellus ut purus ac libero ultrices commodo commodo at quam. In vestibulum purus sit amet tempus euismod. Donec sed congue nisl.</p>
                 </div> 
             </div>
-        </div>
-
+        </div> 
+ 
         <div id="thirdRow">
             <div class="featuresOuterDiv">
                 <div class="feature1Div">
@@ -358,20 +354,21 @@
                     </div>
                     <div class="support">
                         <div><h2 class="featuresH2">SUPPORT</h2></div> 
-                        <div><p class="featuresP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sequi iste doloremque exercitationem.</p></div>
+                        <div><p class="featuresP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate distinctio perspiciatis </p></div>
                     </div>
                 </div>
             </div>
-            <button class="featureButton">Talk to Us</button>
+            <div class="Button">
+                <button class="featureButton">Talk to Us</button>
+            </div>
+            
            
-        </div>
+        </div>  
         
         <!-- Get in Touch -->
         <div id="fourthRow">
             <h1 class="fourthRowH1">GET IN TOUCH</h1>
-            <p class="fourthRowP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam velit aut praesentium necessitatibus in non quas, doloribus repudiandae ipsa repellat vero! Laboriosam expedita eaque 
-
-            </p>
+            <p class="fourthRowP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam velit aut praesentium necessitatibus in non quas, doloribus repudiandae ipsa repellat vero! Laboriosam expedita eaque </p>
                 <form action="">
                     <div>
                         <input type="text" name="" id="" placeholder="YOUR NAME"> 
