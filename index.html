@@ -113,6 +113,23 @@
             letter-spacing: 2px;
         }
 
+        /* clip path1*/
+        .container{
+            background-color: #f1c11a;
+            height: 50px;
+            width: 100%;
+            position: relative;
+            border: 0px;
+        }
+        .clip{
+            background-color: white;
+            position: absolute;
+            left: 15%;
+            height: 50px;
+            width: 70%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            transform: rotate(180deg);
+        }
     
         /*third features row*/
         #thirdRow{
@@ -248,6 +265,22 @@
             border: none;
         }
 
+        /*Clip path2*/
+        .containerFooter{
+            background-color: black;
+            height: 80px;
+            width: 100%;
+            position: relative;
+        }
+        .clip1{
+            background-color: white;
+            position: absolute;
+            left: 15%;
+            height: 80px;
+            width: 70%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            transform: rotate(180deg);
+        }
         /*footer*/
         #footer{
             background-color: black;
@@ -325,7 +358,13 @@
                 </div> 
             </div>
         </div> 
- 
+
+        <!-- clippath row -->
+        <div class="container">
+            <div class="clip"></div>
+        </div>
+
+ <!-- third row -->
         <div id="thirdRow">
             <div class="featuresOuterDiv">
                 <div class="feature1Div">
@@ -380,6 +419,13 @@
                 </form>
                 <button class="fourthRowButton">SEND MESSAGE</button>
         </div>
+
+        <!-- clip path2 -->
+        <div class="containerFooter">
+            <div class="clip1"></div>
+        </div>
+
+
         <!-- footer -->
         <div id="footer">
             <div class="footFeature1">
